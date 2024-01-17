@@ -72,7 +72,7 @@
         src: /home/ubuntu/boxfuse-sample-java-war-hello/hello-1.0.war
         dest: /var/lib/tomcat9/webapps
         mode: push
-      delegate_to: "{{ assembly_node }}"
+      delegate_to: assembly_node
 
 - name: launching an artifact on a prod node
   hosts: prod_node
